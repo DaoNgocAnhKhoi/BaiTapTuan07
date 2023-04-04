@@ -74,8 +74,9 @@ function resetTimer() {
     var listTimer = document.getElementsByClassName("saveTimer");
     console.log(listTimer);
 
-    for (let i = 0; i < index; i++) {
+    for (let i = listTimer.length - 1; i >= 0; i--) {
         listTimer[i].remove();
     }
+
     index = 0;
 }
